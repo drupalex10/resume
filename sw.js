@@ -1,6 +1,6 @@
 /* Simple PWA Service Worker for offline-first static site */
 
-const CACHE_NAME = 'kp-resume-v1';
+const CACHE_NAME = 'kp-resume-v3';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -16,7 +16,22 @@ const PRECACHE_URLS = [
   '/ab_files/favicon-192x192.png',
   '/ab_files/khoapham-144.png',
   '/ab_files/khoapham-192.png',
-  '/ab_files/khoapham-512.png'
+  '/ab_files/khoapham-512.png',
+  
+  // Site images
+  '/ab_files/images/sites/fuelcloud.png',
+  '/ab_files/images/sites/businesssales.png',
+  '/ab_files/images/sites/konnect.jpg',
+  '/ab_files/images/sites/natureeye.jpg',
+  '/ab_files/images/sites/raksul.png',
+  '/ab_files/images/sites/transportme.png',
+  
+  // User images
+  '/ab_files/images/users/AnhTran.jpeg',
+  '/ab_files/images/users/DucVu.png',
+  '/ab_files/images/users/Henry.jpeg',
+  '/ab_files/images/users/Keiran.png',
+  '/ab_files/images/users/KOJI.jpeg'
 ];
 
 self.addEventListener('install', (event) => {
