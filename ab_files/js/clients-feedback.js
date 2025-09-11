@@ -1,8 +1,8 @@
 (function(){
 	const feedbacks = [
 		{ name: 'Keiran James - Co-founder at BusinessSales.com.au', avatar: 'ab_files/images/users/Keiran.png', quote: 'Khoa delivered exactly what We needed, on time and with great communication.', link: 'https://www.linkedin.com/in/keiran-james-/' },
-		{ name: 'Duc Vu - CTO & Co-Founder', avatar: 'ab_files/images/users/DucVu.png', quote: 'Easy to work with and highly reliable. We will collaborate again.', link: 'https://www.linkedin.com/in/tuanducvu/' },
-		{ name: 'Henry de Waziers - Senior Project Manager', avatar: 'ab_files/images/users/Henry.jpeg', quote: 'At Fidesio, We worked together on several projects, Khoa was a great asset to the team. He is a very talented developer and a great team leader.', link: 'https://www.linkedin.com/in/henry-de-waziers-868aa099/' },
+		{ name: 'Duc Vu - CTO & Co-Founder', avatar: 'ab_files/images/users/DucVu.png', quote: 'Easy to work with and highly reliable.', link: 'https://www.linkedin.com/in/tuanducvu/' },
+		{ name: 'Henry de Waziers - Senior Project Manager', avatar: 'ab_files/images/users/Henry.jpeg', quote: 'At Fidesio, We worked together on several projects. Khoa was a great asset to the team. He is a very talented developer and a great team leader.', link: 'https://www.linkedin.com/in/henry-de-waziers-868aa099/' },
 	];
 
 	const track = document.getElementById('cfTrack');
