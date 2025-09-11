@@ -1,8 +1,8 @@
 (function(){
 	const feedbacks = [
-		{ name: 'Alex Nguyen', avatar: 'ab_files/khoapham-144.png', quote: 'Khoa delivered exactly what we needed, on time and with great communication.' },
-		{ name: 'Minh Tran', avatar: 'ab_files/khoapham-192.png', quote: 'Solid engineering, clean architecture. Our performance improved noticeably.' },
-		{ name: 'Sarah Lee', avatar: 'ab_files/KP-avatar.jpg', quote: 'Easy to work with and highly reliable. We will collaborate again.' }
+		{ name: 'Keiran James - Co-founder at BusinessSales.com.au', avatar: 'ab_files/images/users/Keiran.png', quote: 'Khoa delivered exactly what We needed, on time and with great communication.', link: 'https://www.linkedin.com/in/keiran-james-/' },
+		{ name: 'Duc Vu - CTO & Co-Founder', avatar: 'ab_files/images/users/DucVu.png', quote: 'Easy to work with and highly reliable. We will collaborate again.', link: 'https://www.linkedin.com/in/tuanducvu/' },
+		{ name: 'Henry de Waziers - Senior Project Manager', avatar: 'ab_files/images/users/Henry.jpeg', quote: 'At Fidesio, We worked together on several projects, Khoa was a great asset to the team. He is a very talented developer and a great team leader.', link: 'https://www.linkedin.com/in/henry-de-waziers-868aa099/' },
 	];
 
 	const track = document.getElementById('cfTrack');
@@ -27,7 +27,19 @@
 		quote.textContent = `“${item.quote}”`;
 		const name = document.createElement('p');
 		name.className = 'cf-name';
-		name.textContent = `— ${item.name}`;
+		name.appendChild(document.createTextNode('— '));
+		if(item.link){
+			const a = document.createElement('a');
+			a.href = item.link;
+			a.target = '_blank';
+			a.rel = 'noopener noreferrer';
+			a.textContent = item.name;
+			name.appendChild(a);
+		} else {
+			const span = document.createElement('span');
+			span.textContent = item.name;
+			name.appendChild(span);
+		}
 
 		textWrap.appendChild(quote);
 		textWrap.appendChild(name);
