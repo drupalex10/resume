@@ -1,6 +1,6 @@
 /* Simple PWA Service Worker for offline-first static site */
 
-const CACHE_NAME = 'kp-resume-v4';
+const CACHE_NAME = 'kp-resume-v5';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
