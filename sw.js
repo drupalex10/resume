@@ -1,6 +1,6 @@
-/* Simple PWA Service Worker for offline-first static site */
+/* Simple PWA Service Worker for offline-first static site (stable URL) */
 
-const CACHE_NAME = 'kp-resume-v5';
+const CACHE_NAME = 'kp-resume-v6';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -9,7 +9,7 @@ const PRECACHE_URLS = [
   '/ab_files/fonts.css',
   '/ab_files/projects.css',
   '/ab_files/feedback.css',
-  '/ab_files/js/pwa-v5.js',
+  '/ab_files/js/pwa.js',
   '/ab_files/js/projects-grid.js',
   '/ab_files/js/clients-feedback.js',
   '/ab_files/KP-avatar.jpg',
@@ -84,3 +84,5 @@ self.addEventListener('fetch', (event) => {
     );
   }
 });
+
+
