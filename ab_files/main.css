@@ -25,6 +25,8 @@ html {
     font-size: 30px;
     color: #272727;
     display: inline-block;
+    font-weight: bold;
+    margin: 0;
   }
   .navbar {
     padding: 50px 0 50px 0;
