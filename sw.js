@@ -1,6 +1,6 @@
 /* Simple PWA Service Worker for offline-first static site */
 
-const CACHE_NAME = 'kp-resume-v9';
+const CACHE_NAME = 'kp-resume-v10';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -12,7 +12,7 @@ const PRECACHE_URLS = [
   '/ab_files/projects.css',
   '/ab_files/feedback.css',
   '/ab_files/js/pwa.js',
-  '/ab_files/KP-avatar.jpg',
+  '/ab_files/KP-avatar.png',
   '/ab_files/favicon-192x192.png',
   '/ab_files/khoapham-144.png',
   '/ab_files/khoapham-192.png',
